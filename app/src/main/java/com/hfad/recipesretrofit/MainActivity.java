@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<RecipeResponse> call, Response<RecipeResponse> response)
             {
                 Log.d("ENQUEUE", "onResponse: response" + (response == null));
-                Log.d("ENQUEUE", "onResponse: resonse body" + (response.body()   == null));
+                Log.d("ENQUEUE", "onResponse: response body" + (response.body()   == null));
 
                 List<Recipe> recipes = response.body().getResults();
                 Log.d("ENQUEUE", "onResponse: " + recipes.toString());
